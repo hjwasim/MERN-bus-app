@@ -29,8 +29,8 @@ export default class App extends React.Component {
     onOpenModal = () => this.setState({ open: true });
     onCloseModal = () => {
         this.setState({ open: false });
-        // localStorage.setItem('paymentData', JSON.stringify(this.state.token))
-        // window.location.href = '/getTicket'
+        localStorage.setItem('paymentData', JSON.stringify(this.state.token))
+        window.location.href = '/getTicket'
     };
 
     componentDidMount() {
